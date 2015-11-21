@@ -1,10 +1,15 @@
 <?php
-$email=$_REQUEST['email'];
+session_start();
+$login=$_SESSION['login'];
+
+if($login==NULL)
+{
+$login=$_REQUEST['login'];
 $pwd=$_REQUEST['pwd'];
 
 if($_REQUEST['submit'])
 {
-	if($email==NULL or $pwd==NULL)
+	if($login==NULL or $pwd==NULL)
 	{
 		$err="Please fill all the details";
 	}
@@ -12,14 +17,15 @@ if($_REQUEST['submit'])
 	{
 		include("../database.php");
 		
-		$a1="select * from registration where Email='$email'";
+		$a1="select * from registration where Email='$login'";
 		$z1=mysql_query($a1);
 		$x1=mysql_fetch_assoc($z1);
 		
-		if($email==$x1[Email])
+		if($login==$x1[Email])
 		{
 			if($pwd==$x1[Password])
 			{
+				$_SESSION['login']=$login;
 				header("location: ../user.php");
 			}
 			else
@@ -33,6 +39,11 @@ if($_REQUEST['submit'])
 		}
 	}
 
+}
+}
+else
+{
+	header("location: ../user.php");
 }
 
 ?>
@@ -50,7 +61,7 @@ if($_REQUEST['submit'])
 			<form role="form" method="post">
 				<div class="form-group">
 				  <label for="email">Email:</label>
-				  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+				  <input type="email" class="form-control" id="login" name="login" placeholder="Enter email">
 				</div>
 				<div class="form-group">
 				  <label for="pwd">Password:</label>
@@ -59,6 +70,8 @@ if($_REQUEST['submit'])
 				<span class="err"><?php echo $err; ?></span><br>
 				<input type="submit" name="submit" id="submit" />
 		  	</form>
+			<br />
+			<a href="/ccs/signup">New User.. ?</a>
 			
 			</div>	
 			

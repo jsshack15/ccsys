@@ -21,10 +21,14 @@ list-style:none;
 
 }
 
-.cyc{
+.welcomepage,.cyc,.thank{
     margin-top: 40px;
 	background-color: #dff0d8;
 	margin-bottom:0px;
+}
+
+.welcomepage{
+padding:30px;
 }
 
 .clk{
@@ -42,6 +46,17 @@ list-style:none;
     text-align: -webkit-auto;
 }
 
+.thankyou{
+width:50%;
+background:white;
+}
+
+.thankmid{
+margin:200px;
+}
+
+
+
 footer{
 margin-left:-15px;
 margin-right:-15px;
@@ -55,4 +70,10 @@ padding-left:40px;
 
 .err{
 color:red;
+}
+
+.user h1{
+font-size: 20px;
+    margin-top: 0px;
+    float: right;
 }

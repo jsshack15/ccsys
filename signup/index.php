@@ -1,5 +1,9 @@
 <?php
+session_start();
+$login=$_SESSION['login'];
 
+if($login==NULL)
+{
 $email=$_REQUEST['email'];
 $cemail=$_REQUEST['cemail'];
 $pwd=$_REQUEST['pwd'];
@@ -32,7 +36,7 @@ if($_REQUEST['submit'])
 				{
 				$q="insert into registration values('','$email','$pwd')";
 				mysql_query($q);
-				
+				$_SESSION['email']=$email;	
 				header("location: ../welcome.php");
 				}
 			}
@@ -47,6 +51,11 @@ if($_REQUEST['submit'])
 		}
 	}
 
+}
+}
+else
+{
+	header("location: ../user.php");
 }
 
 

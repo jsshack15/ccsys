@@ -5,7 +5,7 @@
 				</div>
 				
 				<div class="col-sm-2">
-					<a href="">Home</a>
+					<a href="/ccs/">Home</a>
 				</div>
 				
 				<div class="col-sm-2">

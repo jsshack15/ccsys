@@ -11,7 +11,7 @@
 					<h3>Company</h3>
 						<ul>
 							<li><a href="/ccs/about-us/">About Us</a></li>
-							<li><a href="/ccs//contact-us/">Contact Us</a></li>
+							<li><a href="/ccs/contact-us/">Contact Us</a></li>
 							<li><a href="/ccs/advertise/">Advertise With US</a></li>
 						</ul>
 				
@@ -21,7 +21,7 @@
 					<h3>Account</h3>
 						<ul>
 							<li><a href="/ccs/login/">Log In</a></li>
-							<li><a href="">Sign up</a></li>
+							<li><a href="/ccs/signup/">Sign up</a></li>
 							
 						</ul>
 				

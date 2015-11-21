@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+session_start();
+$login=$_SESSION['login'];
+
+
+?><!DOCTYPE html>
 <html lang="en">
 	<?php include("title.php"); ?>
 	<body>
@@ -9,10 +14,10 @@
 			<div class="row cyc jumbotron">
 				<h1 class="text-center col-xs-12"> Choose Your Profile </h1>
 			
-				<div class="col-sm-5 text-center well ugclk clk">
+				<div class="col-sm-3 text-center well ugclk clk">
 				
 					
-					<h1><span class="">Student To Student</span></h1>
+					<h1><span class=""><a href="student2student.php">Student To Student</a></span></h1>
 					
 					<!--<div class="ug">
 						<ul>
@@ -23,16 +28,28 @@
 					</div>-->
 				</div>
 				
-				<div class="col-sm-5 text-center well pgclk clk">
-					<h1><span class="pgs">PG</span></h1>
+				<div class="col-sm-3 text-center well pgclk clk">
+					<h1><span class=""><a href="student2faculty.php">Student To Faculty</a></span></h1>
 					
-					<div class="pg">
+					<!--<div class="pg">
 						<ul>
 							<li><a href="/ccs/pgarts.php">Arts</a></li>
 							<li><a href="/ccs/pgcommerce.php">Commerce</a></li>
 							<li><a href="/ccs/pgscience.php">Science</a></li>
 						</ul>
-					</div>
+					</div>-->
+				</div>
+				
+				<div class="col-sm-3 text-center well pgclk clk">
+					<h1><span class=""><a href="faculty2faculty.php">Faculty To Faculty</a></span></h1>
+					
+					<!--<div class="pg">
+						<ul>
+							<li><a href="/ccs/pgarts.php">Arts</a></li>
+							<li><a href="/ccs/pgcommerce.php">Commerce</a></li>
+							<li><a href="/ccs/pgscience.php">Science</a></li>
+						</ul>
+					</div>-->
 				</div>
 			
 			
