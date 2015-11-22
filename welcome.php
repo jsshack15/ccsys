@@ -1,5 +1,6 @@
 <?php
 session_start();
+$email=$_SESSION['email'];
 
 
 $name=$_REQUEST['name'];
@@ -21,7 +22,7 @@ if($_REQUEST['submit'])
 	else
 	{
 		include("database.php");
-		$q="insert into profile values('','$name','$cn','$branch','$fonno','$role')";
+		$q="insert into profile values('','$name','$cn','$branch','$fonno','$role','$email')";
 		mysql_query($q);
 		
 		

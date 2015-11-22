@@ -4,12 +4,21 @@ $fonno=$_REQUEST['fonno'];
 
 if($_REQUEST['contact'])
 {
+
+	if($email==NULL or $fonno==NULL)
+	{
+		$msg="Please fill all details";
+	}
+	else
+	{
 	include("../database.php");
 	
 	$q="insert into advertise values('','$email','$fonno')";
 	mysql_query($q);
 	
 	$msg="Query recieved";
+	}
+
 
 }
 

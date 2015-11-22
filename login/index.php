@@ -26,7 +26,7 @@ if($_REQUEST['submit'])
 			if($pwd==$x1[Password])
 			{
 				$_SESSION['login']=$login;
-				header("location: ../user/$login");
+				header("location: ../user.php");
 			}
 			else
 			{
@@ -43,7 +43,7 @@ if($_REQUEST['submit'])
 }
 else
 {
-	header("location: ../user/$login");
+	header("location: ../user.php");
 }
 
 ?>

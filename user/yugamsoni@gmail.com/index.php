@@ -14,7 +14,7 @@ if($_REQUEST['logout'])
 
 include('../../database.php');
 
-$q="select * from registration where Email='$login'";
+$q="select * from registration where Email='yugamsoni@gmail.com'";
 $z=mysql_query($q);								
 $x=mysql_fetch_assoc($z);
 
@@ -61,9 +61,7 @@ if($_REQUEST['postuser'])
 				<div class='form-group col-sm-10'>
 					<form method='post'>
 						<textarea class='form-control' rows='5' id='usertextarea' name='usertextarea'></textarea> <br>
-						<input type='submit' name='postuser' value='post' class='btn'>
-						
-					</form>
+						</form>
 				</div>
 			</div>
 			
@@ -74,7 +72,7 @@ if($_REQUEST['postuser'])
 				</div>
 				<div class='col-sm-10'>
 					<?php 
-						$q2="select * from post where Email='$login'";
+						$q2="select * from post where Email='yugamsoni@gmail.com'";
 						$z2=mysql_query($q2);
 						
 						while($x2=mysql_fetch_assoc($z2))

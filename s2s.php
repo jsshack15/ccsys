@@ -64,7 +64,7 @@ $x1=mysql_fetch_assoc($z1);
 					?>
 								<div class="col-sm-3">
 									<img src="/ccs/image/<?php echo $x2[Name]; ?>" class="withs"  />
-									<?php echo $x[Name]; ?>
+									<?php echo $x[Name]."<br>"."<a href='/ccs/user/$x[Email]'>".$x[Email]."</a>"; ?>
 								</div>
 							<?php	
 								
