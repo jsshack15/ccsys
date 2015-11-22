@@ -6,7 +6,10 @@
 		
 			<?php include("header.php"); ?>
 			
-			<div class="row jumbotron">
+			<div class="row jumbotron" style="
+    margin-bottom: 0px;
+    padding: 150px;
+">
 			
 				<div class="col-xs-12">
 					<h1> Please Choose Profile According To Your Role </h1>

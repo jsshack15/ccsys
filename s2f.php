@@ -48,7 +48,10 @@ $x1=mysql_fetch_assoc($z1);
 				
 				</div>
 				
-				<div class="col-sm-10">
+				<div class="col-sm-10" style="
+    margin-top: 40px;
+    margin-bottom: 40px;
+">
 					<?php
 						while($x=mysql_fetch_assoc($z))
 						{
