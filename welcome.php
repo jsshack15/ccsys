@@ -6,6 +6,7 @@ $name=$_REQUEST['name'];
 $cn=$_REQUEST['cn'];
 $branch=$_REQUEST['branch'];
 $fonno=$_REQUEST['fonno'];
+$role=$_REQUEST['role'];
 
 
 
@@ -20,7 +21,7 @@ if($_REQUEST['submit'])
 	else
 	{
 		include("database.php");
-		$q="insert into profile values('','$name','$cn','$branch','$fonno')";
+		$q="insert into profile values('','$name','$cn','$branch','$fonno','$role')";
 		mysql_query($q);
 		
 		
@@ -85,6 +86,14 @@ if($_REQUEST['submit'])
 						<input type="text" class="form-control" id="fonno" name="fonno" placeholder="Phone No.">
 						</div>
 						
+						<div class="form-group">
+						<label for="role">Your Role:</label>
+						<select class="form-control" id="role" name="role">
+						<option selected="selected">-Choose From Drop Down-</option>
+						<option>Student</option>
+						<option>Faculty</option>
+						</select>
+						</div>
 						<span class="err"><?php echo $err; ?></span><br>
 						<input type="submit" name="submit" id="submit" />
 					</form>

@@ -4,6 +4,8 @@
 		<link rel="stylesheet" href="/ccs/ys/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/ccs/ys/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="/ccs/ys/css/mine.css" />
+		<link rel="stylesheet" href="/ccs/ys/css/slidercss.css" />
+		
 		
 		
 	</head>

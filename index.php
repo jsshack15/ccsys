@@ -11,6 +11,29 @@ $login=$_SESSION['login'];
 		
 			<?php include("header.php"); ?>
 			
+			<div class="row">
+				<div class="col-xs-12 homepagepic" >
+					<section class="demo">
+						
+							<div class="container123">
+								<div style="display: inline-block;">
+								<img src="1.jpg" class="img-responsive"/>
+								</div>
+								<div>
+								<img src="2.jpg" class="img-responsive"/>
+								</div>
+								<div>
+								<img src="3.jpg" class="img-responsive"/>
+								</div>
+								
+							
+							</div>
+					</section>
+
+				</div>
+			
+			</div>
+			
 			<div class="row cyc jumbotron">
 				<h1 class="text-center col-xs-12"> Choose Your Profile </h1>
 			
@@ -18,38 +41,18 @@ $login=$_SESSION['login'];
 				
 					
 					<h1><span class=""><a href="student2student.php">Student To Student</a></span></h1>
-					
-					<!--<div class="ug">
-						<ul>
-							<li><a href="/ccs/ugarts.php">Arts</a></li>
-							<li><a href="/ccs/ugcommerce.php">Commerce</a></li>
-							<li><a href="/ccs/ugscience.php">Science</a></li>
-						</ul>
-					</div>-->
+				
 				</div>
 				
 				<div class="col-sm-3 text-center well pgclk clk">
 					<h1><span class=""><a href="student2faculty.php">Student To Faculty</a></span></h1>
-					
-					<!--<div class="pg">
-						<ul>
-							<li><a href="/ccs/pgarts.php">Arts</a></li>
-							<li><a href="/ccs/pgcommerce.php">Commerce</a></li>
-							<li><a href="/ccs/pgscience.php">Science</a></li>
-						</ul>
-					</div>-->
+			
 				</div>
 				
 				<div class="col-sm-3 text-center well pgclk clk">
 					<h1><span class=""><a href="faculty2faculty.php">Faculty To Faculty</a></span></h1>
 					
-					<!--<div class="pg">
-						<ul>
-							<li><a href="/ccs/pgarts.php">Arts</a></li>
-							<li><a href="/ccs/pgcommerce.php">Commerce</a></li>
-							<li><a href="/ccs/pgscience.php">Science</a></li>
-						</ul>
-					</div>-->
+			
 				</div>
 			
 			
@@ -60,29 +63,8 @@ $login=$_SESSION['login'];
 		</div>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-	(function(){
-		
-	$('div.ug').hide();
-	
-	$('div.ugclk').hover(function(){
-		$('div.ug').toggle();
-		
-	});
-	
-	$('div.pg').hide();
-	
-	$('div.pgclk').hover(function(){
-		$('div.pg').toggle();
-		
-	});
-	
 
-	
-	
-	
-	})();
-</script>
+<script src="/ccs/ys/js/sliderjs.js"></script>
 
 	</body>
 </html>

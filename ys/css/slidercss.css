@@ -1,0 +1,31 @@
+.container123 {
+  //max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.container123 div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.container123 img {
+  width: 100%;
+  max-height: 500px;
+  min-height:500px;
+}
+
+/*button {
+  position: absolute;
+}
+
+.next {
+  right: -5px;
+  float:right;
+}
+
+.prev {
+  left: -5px;
+  float:left;
+}*/

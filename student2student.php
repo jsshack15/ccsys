@@ -1,8 +1,14 @@
 <?php
 session_start();
+$login=$_SESSION['login'];
 if($login==NULL)
 {
 header("location: login/");
+}
+else
+{
+$_SESSION['login']=$login;
+header("location: s2s.php");
 }
 
 ?><!DOCTYPE html>

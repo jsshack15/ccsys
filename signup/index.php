@@ -34,6 +34,8 @@ if($_REQUEST['submit'])
 				}
 				else
 				{
+				include("mkdir.php");
+				
 				$q="insert into registration values('','$email','$pwd')";
 				mysql_query($q);
 				$_SESSION['email']=$email;	
