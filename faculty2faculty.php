@@ -1,14 +1,32 @@
 <?php
 session_start();
 $login=$_SESSION['login'];
+
+include("database.php");
 if($login==NULL)
 {
 header("location: login/");
 }
 else
 {
-$_SESSION['login']=$login;
-header("location: f2f.php");
+$q="select * from registration where Email='$login'";
+	$z=mysql_query($q);
+	$w=mysql_fetch_assoc($z);
+	$n=$w[Id];
+	
+	$q1="select * from profile where Id=$n";
+	$z1=mysql_query($q1);
+	$w1=mysql_fetch_assoc($z1);
+	
+	if($w1[Role]=="Student")
+	{
+		header("Location: roleerror.php");
+	}
+	else
+	{
+		$_SESSION['login']=$login;
+		header("location: f2f.php");
+	}
 }
 
 ?><!DOCTYPE html>
