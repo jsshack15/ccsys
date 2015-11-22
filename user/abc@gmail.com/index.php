@@ -58,12 +58,9 @@ if($_REQUEST['postuser'])
 					<img src='/ccs/image/<?php echo $x1[Name]; ?>' class='img-responsive img-thumbnail imguser'/>
 				</div>
 				
-				<div class='form-group col-sm-10'>
-					<form method='post'>
-						<textarea class='form-control' rows='5' id='usertextarea' name='usertextarea'></textarea> <br>
-						
-						
-					</form>
+				<div class='form-group col-sm-10 jumbotron'>
+					<p>  Below are the posts posted by abc@gmail.com <br>
+							Do come back again to see latest posts by abc@gmail.com </p>
 				</div>
 			</div>
 			

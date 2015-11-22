@@ -59,11 +59,10 @@ if($_REQUEST['postuser'])
 				</div>
 				
 				<div class='form-group col-sm-10'>
-					<form method='post'>
-						<textarea class='form-control' rows='5' id='usertextarea' name='usertextarea'></textarea> <br>
-						
-						
-					</form>
+					<div class='form-group col-sm-10 jumbotron'>
+					<p>  Below are the posts posted by yugam.soni@gmail.com <br>
+							Do come back again to see latest posts by yugam.soni@gmail.com </p>
+				</div>
 				</div>
 			</div>
 			

@@ -45,12 +45,12 @@ if($_REQUEST['postuser'])
 			
 			<div class="row jumbotron user">
 			
-				<div class="col-sm-1">
-					<h1 ><?php echo $x3[Role]; ?></h1>
+				<div class="col-sm-2">
+					<h1 ><?php echo $x3[Role]." - ".$x3[Branch]; ?></h1>
 				</div>
 			
 			
-				<div class="col-sm-8 text-center">
+				<div class="col-sm-7 text-center">
 					<form>
 						<input type="submit" class="btn btn-default" id="logout" name="logout" value="logout">
 					</form>
@@ -69,7 +69,7 @@ if($_REQUEST['postuser'])
 					<img src="image/<?php echo $x1[Name]; ?>" class="img-responsive img-thumbnail imguser"/>
 				</div>
 				
-				<div class="form-group col-sm-10">
+				<div class="form-group col-sm-9">
 					<form method="post">
 						<textarea class="form-control" rows="5" id="usertextarea" name="usertextarea"></textarea> <br>
 						<input type="submit" name="postuser" value="post" class="btn">
@@ -99,12 +99,13 @@ if($_REQUEST['postuser'])
 				</div>
 			
 			</div>
+			<?php include("footer.php"); ?>
 		</div>
 			
 			
 			
 			
-			<?php include("footer.php"); ?>
+			
 		
 	
 	</body>
